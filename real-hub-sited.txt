@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Insta Followers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --header-bg: linear-gradient(135deg, #e1306c, #fd1d1d);
+      --nav-bg: #111;
+      --card-bg: #fff;
+      --footer-bg: #111;
+      --footer-text: #ccc;
+    }
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #f5f5f5;
+      --header-bg: linear-gradient(135deg, #111, #333);
+      --nav-bg: #222;
+      --card-bg: #1e1e1e;
+      --footer-bg: #000;
+      --footer-text: #999;
+    }
+
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease-in-out;
+    }
+    header {
+      background: var(--header-bg);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+    nav {
+      background-color: var(--nav-bg);
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #e1306c;
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #e1306c;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      z-index: 2000;
+    }
+    .toggle-btn:hover {
+      background: #c71f5c;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .service-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .service-card img {
+      width: 60px;
+      height: 60px;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+    footer {
+      background-color: var(--footer-bg);
+      color: var(--footer-text);
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+
+  <header>
+    <h1>Real Hub</h1>
+    <p>Get Real, Fast & Organic Growth</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2>🔥 Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+        <h3>Instagram Followers</h3>
+        <p>1K – ₹399<br>1.2K – ₹499<br>1.5K – ₹599</p>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Likes" />
+        <h3>Instagram Likes</h3>
+        <p>400+ – ₹199<br>500 – ₹249<br>1000+ – ₹499</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Real Insta Followers. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+      const btn = document.querySelector(".toggle-btn");
+      btn.textContent = document.body.classList.contains("dark") ? "Light Mode" : "Dark Mode";
+    }
+  </script>
+</body>
+</html>
